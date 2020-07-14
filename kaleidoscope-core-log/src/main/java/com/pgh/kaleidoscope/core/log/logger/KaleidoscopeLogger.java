@@ -49,7 +49,7 @@ public class KaleidoscopeLogger implements InitializingBean {
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		log.info(serviceId + ": BladeLogger init success!");
+		log.info(serviceId + ": KaleidoscopeLogger init success!");
 	}
 
 }

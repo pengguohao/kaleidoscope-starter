@@ -27,7 +27,7 @@ import java.util.List;
  * @author Chill
  */
 @Data
-@ConfigurationProperties("blade.secure")
+@ConfigurationProperties("kaleidoscope.secure")
 public class KaleidoscopeSecureProperties {
 
 	private final List<ClientSecure> client = new ArrayList<>();

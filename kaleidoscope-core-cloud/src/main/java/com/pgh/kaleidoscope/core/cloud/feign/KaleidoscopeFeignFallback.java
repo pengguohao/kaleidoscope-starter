@@ -47,7 +47,7 @@ public class KaleidoscopeFeignFallback<T> implements MethodInterceptor {
 	@Override
 	public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
 		String errorMessage = cause.getMessage();
-		log.error("BladeFeignFallback:[{}.{}] serviceId:[{}] message:[{}]", targetType.getName(), method.getName(), targetName, errorMessage);
+		log.error("KaleidoscopeFeignFallback:[{}.{}] serviceId:[{}] message:[{}]", targetType.getName(), method.getName(), targetName, errorMessage);
 		Class<?> returnType = method.getReturnType();
 		// 暂时不支持 flux，rx，异步等，返回值不是 R，直接返回 null。
 		if (CommonResult.class != returnType) {

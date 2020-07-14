@@ -33,35 +33,59 @@
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
         <!-- Blade -->
-        <dependency>
+<!--        <dependency>
             <groupId>com.pgh</groupId>
             <artifactId>kaleidoscope-core-launch</artifactId>
             <version>${kaleidoscope.starter.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.pgh</groupId>
             <artifactId>kaleidoscope-core-cloud</artifactId>
             <version>${kaleidoscope.starter.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.pgh</groupId>
+                    <artifactId>kaleidoscope-core-secure</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>com.pgh</groupId>
             <artifactId>kaleidoscope-core-tool</artifactId>
             <version>${kaleidoscope.starter.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.pgh</groupId>
             <artifactId>kaleidoscope-core-secure</artifactId>
             <version>${kaleidoscope.starter.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.pgh</groupId>
+                    <artifactId>kaleidoscope-core-tool</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.pgh</groupId>
             <artifactId>kaleidoscope-core-log</artifactId>
             <version>${kaleidoscope.starter.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.pgh</groupId>
+                    <artifactId>kaleidoscope-core-secure</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.pgh</groupId>
             <artifactId>kaleidoscope-core-swagger</artifactId>
             <version>${kaleidoscope.starter.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.pgh</groupId>
+                    <artifactId>kaleidoscope-core-tool</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--MyBatis-->
         <dependency>

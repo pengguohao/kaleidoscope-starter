@@ -64,7 +64,7 @@ spring:
 
 #配置日志地址
 logging:
-  config: classpath:log/logback_${blade.env}.xml
+  config: classpath:log/logback_${kaleidoscope.env}.xml
 
 # mybatis
 mybatis-plus:

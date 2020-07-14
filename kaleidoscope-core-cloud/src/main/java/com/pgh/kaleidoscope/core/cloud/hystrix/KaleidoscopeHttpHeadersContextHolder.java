@@ -35,13 +35,13 @@ import java.util.List;
  * @author L.cm
  */
 public class KaleidoscopeHttpHeadersContextHolder {
-	private static final ThreadLocal<HttpHeaders> HTTP_HEADERS_HOLDER = new NamedThreadLocal<>("Blade hystrix HttpHeaders");
+	private static final ThreadLocal<HttpHeaders> HTTP_HEADERS_HOLDER = new NamedThreadLocal<>("Kaleidoscope hystrix HttpHeaders");
 
 	/**
 	 * 请求和转发的ip
 	 */
 	private static final String[] ALLOW_HEADS = new String[]{
-		"X-Real-IP", "x-forwarded-for", "authorization", "blade-auth", "Authorization", "Blade-Auth"
+		"X-Real-IP", "x-forwarded-for", "authorization", "blade-auth", "Authorization", "Kaleidoscope-Auth"
 	};
 
 	static void set(HttpHeaders httpHeaders) {

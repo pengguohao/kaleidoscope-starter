@@ -1,18 +1,4 @@
-/**
- * Copyright (c) 2018-2028, Chill Zhuang 庄骞 (smallchill@163.com).
- * <p>
- * Licensed under the GNU LESSER GENERAL PUBLIC LICENSE 3.0;
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * <p>
- * http://www.gnu.org/licenses/lgpl.html
- * <p>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package com.pgh.kaleidoscope.core.launch;
 
 import com.pgh.kaleidoscope.core.launch.constant.AppConstant;
@@ -89,11 +75,11 @@ public class KaleidoscopeApplication {
 		props.setProperty("spring.profiles.active", profile);
 		props.setProperty("info.version", AppConstant.APPLICATION_VERSION);
 		props.setProperty("info.desc", appName);
-		props.setProperty("blade.env", profile);
-		props.setProperty("blade.name", appName);
-		props.setProperty("blade.is-local", String.valueOf(isLocalDev()));
-		props.setProperty("blade.dev-mode", profile.equals(AppConstant.PROD_CODE) ? "false" : "true");
-		props.setProperty("blade.service.version", AppConstant.APPLICATION_VERSION);
+		props.setProperty("kaleidoscope.env", profile);
+		props.setProperty("kaleidoscope.name", appName);
+		props.setProperty("kaleidoscope.is-local", String.valueOf(isLocalDev()));
+		props.setProperty("kaleidoscope.dev-mode", profile.equals(AppConstant.PROD_CODE) ? "false" : "true");
+		props.setProperty("kaleidoscope.service.version", AppConstant.APPLICATION_VERSION);
 		props.setProperty("spring.main.allow-bean-definition-overriding", "true");
 		props.setProperty("spring.cloud.nacos.discovery.server-addr", NacosConstant.NACOS_ADDR);
 		props.setProperty("spring.cloud.nacos.config.server-addr", NacosConstant.NACOS_ADDR);
