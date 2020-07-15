@@ -41,7 +41,7 @@ import java.util.*;
  * @author Chill
  */
 public class SecureUtil {
-	private static final String BLADE_USER_REQUEST_ATTR = "_BLADE_USER_REQUEST_ATTR_";
+	private static final String BLADE_USER_REQUEST_ATTR = "_KALEIDOSCOPE_USER_REQUEST_ATTR_";
 
 	private final static String HEADER = TokenConstant.HEADER;
 	private final static String BEARER = TokenConstant.BEARER;
