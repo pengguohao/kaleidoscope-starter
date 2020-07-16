@@ -31,7 +31,7 @@ public interface SecureConstant {
 	/**
 	 * blade_client查询语句
 	 */
-	String BASE_STATEMENT = "select " + CLIENT_FIELDS + " from kaleidoscope_client";
+	String BASE_STATEMENT = "select " + CLIENT_FIELDS + " from kaleidos_client";
 
 	/**
 	 * blade_client查询排序
