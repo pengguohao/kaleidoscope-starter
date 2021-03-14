@@ -28,7 +28,7 @@ import java.io.Serializable;
  * @since 2018-10-12
  */
 @Data
-@TableName("blade_log_usual")
+@TableName("kaleidos_log_usual")
 public class LogUsual extends LogAbstract implements Serializable {
 
 	private static final long serialVersionUID = 1L;
